@@ -12,7 +12,7 @@ end
 # Gems de base 
 gem 'rails', '~> 5.1.4'
 gem 'puma', '~> 3.10'
-gem 'sqlite3', '~> 1.3', '>= 1.3.13'
+#gem 'sqlite3', '~> 1.3', '>= 1.3.13'
 gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 gem 'uglifier', '~> 3.2'
 gem 'coffee-rails', '~> 4.2', '>= 4.2.2'
@@ -33,7 +33,7 @@ gem 'jquery-turbolinks'
 ################################################################################
 group :development, :test do
   # Heroku Deployment
-  # gem 'sqlite3', '~> 1.3', '>= 1.3.13'
+  gem 'sqlite3', '~> 1.3', '>= 1.3.13'
   gem 'byebug', '~> 9.1', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.15', '>= 2.15.4'
   gem 'selenium-webdriver'
@@ -48,7 +48,7 @@ end
 ################################################################################
 group :production do
   # Heroku Deployment
-  # gem 'pg', '0.20.0'
+ gem 'pg', '0.20.0'
 end
 ################################################################################
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
